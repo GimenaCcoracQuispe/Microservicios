@@ -1,0 +1,13 @@
+CREATE TABLE Product (
+    id SERIAL PRIMARY KEY,  
+    name TEXT NOT NULL,   
+    price TEXT NOT NULL, 
+    status TEXT DEFAULT 'A' NOT NULL 
+);
+
+INSERT INTO Product (name, price) VALUES
+('Laptop', '1500.00'),
+('Smartphone', '800.00'),
+('Tablet', '600.00');
+
+select * from product;
