@@ -1,0 +1,19 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-weathered-violet-a8n0gasw-pooler.eastus2.azure.neon.tech/ControlAsistencia?sslmode=require
+    username: ControlAsistencia_owner
+    password: npg_z7tu4XsgYcVC
+
+  kafka:
+    bootstrap-servers: pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+    properties:
+      security.protocol: SASL_SSL
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="CGV6CPJS3KIXKI7X" password="ZjaXJVqPa1YFD0v6JL64a6HnifJricQlpUBQoWxK79PLm3wiIQ8XTEvfcs2ItSgP";
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+server:
+  port: 8081
