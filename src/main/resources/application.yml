@@ -1,0 +1,8 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-weathered-violet-a8n0gasw-pooler.eastus2.azure.neon.tech/ControlAsistencia?sslmode=require
+    username: ControlAsistencia_owner
+    password: npg_z7tu4XsgYcVC
+
+server:
+  port: 8080
