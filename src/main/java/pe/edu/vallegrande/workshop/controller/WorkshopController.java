@@ -1,4 +1,4 @@
-package pe.edu.vallegrande.workshop.rest;
+package pe.edu.vallegrande.workshop.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/taller")
 @CrossOrigin(origins = "*")
 @RequiredArgsConstructor
-public class WorkshopRestController {
+public class WorkshopController {
 
     private final WorkshopService workshopService;
 
