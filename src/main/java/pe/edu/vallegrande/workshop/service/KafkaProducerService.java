@@ -17,10 +17,7 @@ public class KafkaProducerService {
 
     private static final String TOPIC = "workshop-events";
 
-    /**
-     * 🔹 Envía un evento relacionado a un taller al topic de Kafka "workshop-events".
-     * Convierte el DTO a JSON, lo publica en Kafka, y muestra logs de éxito o error.
-     */
+
     public void sendWorkshopEvent(WorkshopKafkaEventDto eventDto) {
         try {
             String message = objectMapper.writeValueAsString(eventDto);
