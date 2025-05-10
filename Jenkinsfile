@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Construyendo...'
-                // Aquí puedes agregar el comando para compilar tu proyecto, por ejemplo:
                 sh 'mvn clean install'  // Usando Maven
                 // O si usas Gradle, sería algo como:
                 // sh './gradlew build'
