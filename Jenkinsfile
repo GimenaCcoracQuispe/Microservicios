@@ -11,7 +11,7 @@ pipeline {
 
     post {
         always {
-            slackSend(channel: '#notificaciones-dev', message: '📢 Prueba: El build ha finalizado.')
+            slackSend(channel: '#nuevo-canal', message: '📢 Prueba: El build ha finalizado.')
         }
     }
 }
