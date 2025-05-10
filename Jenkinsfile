@@ -5,9 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Construyendo...'
-                sh 'mvn clean install'  // Usando Maven
-                // O si usas Gradle, sería algo como:
-                // sh './gradlew build'
             }
         }
     }
@@ -21,3 +18,4 @@ pipeline {
         }
     }
 }
+
