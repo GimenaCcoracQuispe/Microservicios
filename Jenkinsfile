@@ -4,18 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Construyendo...'
+                echo 'Hola mundo desde Jenkins'
             }
         }
     }
 
     post {
-        success {
-            slackSend(channel: '#notificaciones-dev', message: '✅ Build exitoso.')
-        }
-        failure {
-            slackSend(channel: '#notificaciones-dev', message: '❌ Build fallido.')
+        always {
+            slackSend(channel: '#notificaciones-dev', message: '📢 Prueba: El build ha finalizado.')
         }
     }
 }
-
